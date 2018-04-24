@@ -90,6 +90,8 @@ so, we can get
  
  So, the next question is: what's the relationship between sensor size and sensor active area?
 
+The tutorials [here](https://www.edmundoptics.com/resources/application-notes/imaging/resolution/)
+may be one of the good start.
 
 
 ## Reference:
@@ -104,4 +106,6 @@ so, we can get
 [Online] http://cctvcad.com/videocad_help/index.html?prim_sensor_size.htm
 
 [5] Sony IMX252LQR. [Online] https://machinevisionstore.com/Catalog/Details/1667
+
+[6] Resolution. [Online] https://www.edmundoptics.com/resources/application-notes/imaging/resolution/
 
