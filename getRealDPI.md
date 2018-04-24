@@ -87,7 +87,7 @@ So my real dpi is 80.
 
 The real DPI can be obtained automatically by the follwoing shell script.
 
-[getRealDPI.sh](https://github.com/LijunSun90/environmentSetupForLinux/blob/master/getRealDPI.sh)
+[getRealDPI.sh](https://github.com/LijunSun90/computerVision/blob/master/getRealDPI.sh)
 
 
 ## 5. Start fixing DPI:
