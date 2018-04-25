@@ -34,7 +34,9 @@ For example, (1inch = 25.4mm),
 
 
 Therefore, due to this absense of specific mathematical formula and the roughly approximation,
-when the optical format is encountered, it is not wise to compute the size according to the formula
+and due to inch-based sensor formats being not standardized, their exact dimensions may vary
+[[1]](https://en.wikipedia.org/wiki/Image_sensor_format).
+So, when the optical format is encountered, it is not wise to compute the size according to the formula
 [[3]](https://en.wikipedia.org/wiki/Optical_format). 
 Instead, look up the specifications in the sheet or online, for example, 
 [[1]](https://en.wikipedia.org/wiki/Image_sensor_format).
@@ -42,10 +44,9 @@ So, for example, we have the following technical specifications [[2]](https://ww
 
 
 |      |              |           | Sensor (mm) | | |
-| ---- | ------------ | --------- | -------- | ----- | ------- |
+| ---- | ------------ | --------- | -------- | ----- | ------ |
 | Type | Aspect Ratio |	Dia. (mm) |	Diagonal | Width |	Height |
-| ---- | ------------ | --------- | -------- | ----- | ------- |
-| 1.8" |	4:3         |	14.111	  |  8.933   | 7.176 |	5.319  |
+| 1.8" |	4:3          |	14.111	   |  8.933   | 7.176 |	5.319  |
 
 
 
@@ -65,7 +66,8 @@ In fact, there is another thing, the **sensor active area** !
 
 **Active area** of the sensor implies an area of the sensor on which image is formed, which may be smaller than 
 equal to the image sensor.
-Active area size depends on the aspect ratio of the sensor and aspect ratio of the output image of the camera. 
+Active area size depends on the aspect ratio of the sensor and aspect ratio of the output image of the camera. The aspect
+ratio of the output image is typically, for example, 16:9 or 4:3.
 Therefore, active area can differ in different modes of operation of the same camera.
 
 For example, the specification details of the Sony IMX252LQR [[5]](https://machinevisionstore.com/Catalog/Details/1667) is,
@@ -93,6 +95,77 @@ so, we can get
 The tutorials [here](https://www.edmundoptics.com/resources/application-notes/imaging/resolution/)
 may be one of the good start.
 
+## 4. An example
+
+ (1) EQUIPMENT: SONY FDR-AX100E Camcorder
+ 
+ (2) SENSOR: 
+ 
+ * SENSOR TYPE: 1.0-type (13.2mm x 8.8mm) back-illuminated Exmor R CMOS sensor
+ 
+ * EFFECTIVE PIXELS (VIDEO): Approx.14.2M pixels(16:9)
+ 
+ * EFFECTIVE PIXELS (STILL IMAGE): Approx.14.2M pixels(16:9)/Approx.10.6M pixels(4:3)
+ 
+ The photo recording pixels and the aspect ratio [[8]](https://www.sony.co.uk/electronics/support/res/manuals/Z013/Z013087111.PDF):
+ 
+ Photo recording mode, Dual Capture:
+
+ * 5,968 × 3,352 = 20,004,736 dots/16:9
+ 
+ * 4,464 × 3,352 = 14,963,328 dots/4:3 (*)
+ 
+ * 5,024 × 2,824 = 14,187,776 dots/16:9 
+  
+ * 3,760 × 2,824 = 10,618,240 dots/4:3 (*)
+ 
+ * 1,920 × 1,080 = 2,073,600 dots/16:9
+ 
+ * 640 × 480 = 307,200 dots/4:3 (*)
+ 
+ *Not available for Dual Capture
+ 
+ Capturing a photo from a movie (models with the USB IN/OUT jacks) :
+ 
+ * 1,920 × 1,080 = 2,073,600 dots/16:9
+ 
+ (3) LENS:
+ 
+ * APERTURE: F2.8-F4.5
+ 
+ * FOCAL DISTANCE: f=9.3-111.6mm
+  
+ * FOCAL LENGTH (35 MM EQUIVALENT) (VIDEO): f=29.0-348.0mm(16:9)
+  
+ * FOCAL LENGTH (35 MM EQUIVALENT) (STILL IMAGE): f=29.0-348.0mm(16:9), f=35.5-426.0mm(4:3)
+ 
+ Therefore,
+ 
+ (4) PIXEL SIZE:
+ 
+ * EFFECTIVE PIXELS (STILL IMAGE): 
+ 
+ 13.2 mm / (5024 pixels) = 2.627 um (16:9); 
+ 
+ 13.2 mm / (4464 pixels) = 2.957 um (16:9)
+ 
+ 13.2 mm / (1920 pixels) = 6.875 um (16:9)
+ 
+ 13.2 mm / (640 pixels) = 20.625 um (4:3)
+ 
+ (5) FOCAL LENGHT IN PIXELS:
+ 
+ * STILL IMAGE: 
+ 
+ (16:9) 11039.208, 9807.237, 4218.18 ~  132470.5, 117686.84, 50618.18 pixels
+ 
+ (4:3) 55.46875 ~ 665.625 pixels
+ 
+ 
+ 
+ 
+ 
+
 
 ## Reference:
 
@@ -108,4 +181,10 @@ may be one of the good start.
 [5] Sony IMX252LQR. [Online] https://machinevisionstore.com/Catalog/Details/1667
 
 [6] Resolution. [Online] https://www.edmundoptics.com/resources/application-notes/imaging/resolution/
+
+[7] SONY FDR-AX100E. [Online] https://www.sony.co.uk/electronics/handycam-camcorders/fdr-ax100e/specifications#specifications
+
+[8] Help Guide. [Online] https://www.sony.co.uk/electronics/support/res/manuals/Z013/Z013087111.PDF
+
+
 
