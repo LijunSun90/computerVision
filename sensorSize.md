@@ -97,7 +97,7 @@ may be one of the good start.
 
 ## 4. An example
 
- (1) EQUIPMENT: SONY FDR-AX100E Camcorder
+ (1) EQUIPMENT: SONY FDR-AX100E Camcorder [[7]](https://www.sony.co.uk/electronics/handycam-camcorders/fdr-ax100e/specifications#specifications)
  
  (2) SENSOR: 
  
