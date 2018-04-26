@@ -103,63 +103,20 @@ may be one of the good start.
  
  * SENSOR TYPE: 1.0-type (13.2mm x 8.8mm) back-illuminated Exmor R CMOS sensor
  
- * EFFECTIVE PIXELS (VIDEO): Approx.14.2M pixels(16:9)
+ From the List Exmor R CMOS sensors listed here [[8]](https://en.wikipedia.org/wiki/Exmor), we can guess 
+ the sensor used by SONY FDR-AX100E is
  
- * EFFECTIVE PIXELS (STILL IMAGE): Approx.14.2M pixels(16:9)/Approx.10.6M pixels(4:3)
+ * SENSOR: IMX183 [[9]](https://www.sony-semicon.co.jp/products_en/new_pro/may_2014/imx183_e.html)
  
- The photo recording pixels and the aspect ratio [[8]](https://www.sony.co.uk/electronics/support/res/manuals/Z013/Z013087111.PDF):
+ From it, we can get the following parameters:
  
- Photo recording mode, Dual Capture:
-
- * 5,968 × 3,352 = 20,004,736 dots/16:9
+ * ACTIVE PIXELS: 5496 x 3672
  
- * 4,464 × 3,352 = 14,963,328 dots/4:3 (*)
+ And it can be calculated that
  
- * 5,024 × 2,824 = 14,187,776 dots/16:9 
-  
- * 3,760 × 2,824 = 10,618,240 dots/4:3 (*)
+ * PIXEL SIZE: 13.2 mm / 5496 pixels = 2.4 um
  
- * 1,920 × 1,080 = 2,073,600 dots/16:9
- 
- * 640 × 480 = 307,200 dots/4:3 (*)
- 
- *Not available for Dual Capture
- 
- Capturing a photo from a movie (models with the USB IN/OUT jacks) :
- 
- * 1,920 × 1,080 = 2,073,600 dots/16:9
- 
- (3) LENS:
- 
- * APERTURE: F2.8-F4.5
- 
- * FOCAL DISTANCE: f=9.3-111.6mm
-  
- * FOCAL LENGTH (35 MM EQUIVALENT) (VIDEO): f=29.0-348.0mm(16:9)
-  
- * FOCAL LENGTH (35 MM EQUIVALENT) (STILL IMAGE): f=29.0-348.0mm(16:9), f=35.5-426.0mm(4:3)
- 
- Therefore,
- 
- (4) PIXEL SIZE:
- 
- * EFFECTIVE PIXELS (STILL IMAGE): 
- 
- 13.2 mm / (5024 pixels) = 2.627 um (16:9); 
- 
- 13.2 mm / (4464 pixels) = 2.957 um (16:9)
- 
- 13.2 mm / (1920 pixels) = 6.875 um (16:9)
- 
- 13.2 mm / (640 pixels) = 20.625 um (4:3)
- 
- (5) FOCAL LENGHT IN PIXELS:
- 
- * STILL IMAGE: 
- 
- (16:9) 11039.208, 9807.237, 4218.18 ~  132470.5, 117686.84, 50618.18 pixels
- 
- (4:3) 55.46875 ~ 665.625 pixels
+ which is consists with the parameters given by the dataset [[9]](https://www.sony-semicon.co.jp/products_en/new_pro/may_2014/imx183_e.html).
  
  
  
@@ -184,7 +141,9 @@ may be one of the good start.
 
 [7] SONY FDR-AX100E. [Online] https://www.sony.co.uk/electronics/handycam-camcorders/fdr-ax100e/specifications#specifications
 
-[8] Help Guide. [Online] https://www.sony.co.uk/electronics/support/res/manuals/Z013/Z013087111.PDF
+[8] Wikipedia: Exmor. [Online] https://en.wikipedia.org/wiki/Exmor
+
+[9] IMX183CQLJ Dataset. [Online]https://www.sony-semicon.co.jp/products_en/new_pro/may_2014/imx183_e.html
 
 
 
