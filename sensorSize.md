@@ -146,7 +146,7 @@ may be one of the good start.
  
  Thus, the measurement of d_i in pixels is: 9.35801972mm / 6.87um/pixel = 1362.157 pixels.
  
- which is very similar to the camera intrinsic matrix obtained from opencv (in pixels):
+ which is very similar to the camera intrinsic matrix obtained from opencv (in pixels) with reprojection error 0.251936:
 
 |                  |                   |   |
 |------------------|-------------------|---|
