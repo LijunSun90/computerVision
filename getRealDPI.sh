@@ -26,7 +26,7 @@ physicalY_inch=$(echo "$physicalY_mm/25.4" | bc -l)
 
 pixelSZ_mm=$(echo "$physicalX_mm / $resolutionX" | bc -l)
 pixelSZ_inch=$(echo "$physicalX_inch / $resolutionX" | bc -l)
-echo "The size of one pixel is: $(printf '%.*f\n' 3 $pixelSZ_mm) mm or $(printf '%.*f\n' 3 $pixelSZ_inch) inch. \n\n"
+echo "The size of one pixel is: $(printf '%.*f\n' 3 $pixelSZ_mm) mm/pixel or $(printf '%.*f\n' 3 $pixelSZ_inch) inch/pixel. \n\n"
 
 dpiX=$(echo "$resolutionX/$physicalX_inch" | bc -l)
 dpiY=$(echo "$resolutionX/$physicalX_inch" | bc -l)
