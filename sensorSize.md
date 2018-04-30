@@ -118,9 +118,42 @@ may be one of the good start.
  
  which is consists with the parameters given by the dataset [[9]](https://www.sony-semicon.co.jp/products_en/new_pro/may_2014/imx183_e.html).
  
+ ## 5. An experiment:
  
+* Equitment: sony hdr-ax100e
+
+* focal length: f = 9.3 mm
+
+* aperture: f10, N = 10
+
+* resolution of each image: 1920 x 1080 (16:9)
+
+* object distance in focus: d_o = (approx) 1500 mm
+
+* focus parameter of the camcorder: 2.0 m (fix focus)
  
+ According to the equation: 
  
+ > 1/d_o + 1/d_i = 1/f
+ 
+ where d_i is the distance between the len and the image plane. Since the camcorder is set fix focus, thus, d_i is fixed.
+ 
+ So, we can obtain
+ 
+ * d_i = (d_o * f) / (d_o - f) = (1500 * 9.3) / (1500 - 9.3) = 9.35801972 mm
+ 
+ The equivalent pixel size under the resolution of 1920 x 1080 is: 5496 / 1920 * 2.4 um = 6.87 um
+ 
+ Thus, the measurement of d_i in pixels is: 9.35801972mm / 6.87um/pixel = 1362.157 pixels.
+ 
+ which is very similar to the camera intrinsic matrix obtained from opencv (in pixels):
+
+|                  |                   |   |
+|------------------|-------------------|---|
+|1571.800135707644,|0,                 |960|
+|0,                |1571.553057856656, |540|
+|0,                |0,                 |1  |
+
  
 
 
