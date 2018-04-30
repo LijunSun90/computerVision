@@ -4,6 +4,7 @@
 using namespace std;
 
 // chessboardGenerator.cpp
+// Function: generate a chessboard.
 // Calling conventin:
 // chessboardGenerator blockSize board_w board_h
 //
